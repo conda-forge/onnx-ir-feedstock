@@ -24,7 +24,7 @@ requirements:
     - numpy
     - onnx >=1.16
     - typing_extensions >=4.10
-    - ml_dtypes
+    - ml_dtypes >=0.5.0
 
 test:
   imports:
