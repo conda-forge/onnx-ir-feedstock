@@ -1,5 +1,5 @@
 {% set name = "onnx-ir" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/onnx_ir-{{ version }}.tar.gz
-  sha256: edbbcd7b1b7ef62883b3bdb893dbbf712f4cf321760587279b7642a593ef9ab9
+  sha256: 513cda24f9710aa1160ec54bf7530ac0ffc3d4ca9e34ac2fb1e2448815bdf2a0
 
 build:
   noarch: python
