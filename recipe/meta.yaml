@@ -1,13 +1,12 @@
-{% set name = "onnx-ir" %}
-{% set version = "0.1.16" %}
+{% set version = "0.2.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: onnx-ir
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/onnx_ir-{{ version }}.tar.gz
-  sha256: dda5c90f9d941767d3bba43adca20923b7fc020eee0cbf947b847a21701f93d9
+  url: https://pypi.org/packages/source/o/onnx-ir/onnx_ir-{{ version }}.tar.gz
+  sha256: 8b8b10a93f43e65962104de6070c43c5dacb0e3cdfefc7c8059dd83c9db64f35
 
 build:
   noarch: python
@@ -17,7 +16,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=70
+    - setuptools >=77
     - pip
   run:
     - python >={{ python_min }}
@@ -25,6 +24,7 @@ requirements:
     - onnx >=1.16
     - typing_extensions >=4.10
     - ml_dtypes >=0.5.0
+    - sympy >=1.13
 
 test:
   imports:
